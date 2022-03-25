@@ -1,5 +1,5 @@
 {
-  "name": "safe-npm",
+  "name": "safe-npm-cli",
   "version": "1.0.0",
   "description": "safe npm time travel installs",
   "main": "index.js",

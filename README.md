@@ -5,7 +5,7 @@ safe npm time travel installs
 ## Install
 
 ```sh
-npm i safe-npm -g
+npm i safe-npm-cli -g
 ```
 
 You can now use `safe-npm` wherever you were using `npm` before. It's a drop-in replacement.
