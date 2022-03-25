@@ -42,4 +42,4 @@ This is a hacky solution and will probably fail miserably in random situations. 
 
 ## License
 
-MIT
+MIT &copy; 2022
