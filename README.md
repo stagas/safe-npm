@@ -8,7 +8,8 @@ safe npm time travel installs
 npm i safe-npm-cli -g
 ```
 
-You can now use `safe-npm` wherever you were using `npm` before. It's a drop-in replacement.
+You can now use `safe-npm` wherever you were using `npm` before.
+It's a drop-in replacement.
 
 ## What is it?
 
