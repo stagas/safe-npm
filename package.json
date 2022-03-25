@@ -1,0 +1,24 @@
+{
+  "name": "safe-npm",
+  "version": "1.0.0",
+  "description": "safe npm time travel installs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo ok",
+    "prepack": "echo ok",
+    "prepush": "echo ok"
+  },
+  "bin": {
+    "safe-npm": "index.js"
+  },
+  "keywords": [
+    "security",
+    "time-travel",
+    "npm"
+  ],
+  "author": "stagas",
+  "license": "MIT",
+  "dependencies": {
+    "npm": "8.5.5"
+  }
+}
