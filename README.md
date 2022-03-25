@@ -8,9 +8,11 @@ safe npm time travel installs
 npm i safe-npm -g
 ```
 
+You can now use `safe-npm` wherever you were using `npm` before. It's a drop-in replacement.
+
 ## What is it?
 
-It wraps and monkey-patches npm to always `install` with the `--before` option set to _**-5 days**_ in the past -- _**except**_ -- for the dependencies you specify in the field `trustedDependencies` in `package.json` like so:
+It wraps and monkey-patches npm to always `install` with the `--before` option set to _**-5 (five) days**_ in the past _**\_except\_**_ for the dependencies you specify in the field `trustedDependencies` in `package.json`, like so:
 
 ```json
 ...
