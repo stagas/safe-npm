@@ -17,12 +17,17 @@ RegistryFetcher.prototype.manifest = function() {
   return manifest.apply(this, arguments)
 }
 
-// add "--before=-5days" to install arguments if not already
+// when installing
 if (process.argv.includes('i') || process.argv.includes('install')) {
+  // add "--before=-5days" to install arguments if not already
   if (!process.argv.some(arg => arg.startsWith('--before='))) {
     const d = new Date()
     process.argv.push('--before=' + new Date(d.setDate(d.getDate() - 5)).toISOString())
   }
+
+  // add "-E" (save-exact) to pin installing version
+  if (!process.argv.includes('-E') && !process.argv.includes('--save-exact'))
+    process.argv.push('-E')
 }
 
 npm(process)
